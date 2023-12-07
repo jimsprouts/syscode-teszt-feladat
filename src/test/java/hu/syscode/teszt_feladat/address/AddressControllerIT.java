@@ -1,4 +1,4 @@
-package hu.syscode.teszt_feladat.teszt_feladat.address;
+package hu.syscode.teszt_feladat.address;
 
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.httpBasic;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

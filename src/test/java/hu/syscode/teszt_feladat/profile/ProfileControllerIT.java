@@ -1,4 +1,4 @@
-package hu.syscode.teszt_feladat.teszt_feladat.profile;
+package hu.syscode.teszt_feladat.profile;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
