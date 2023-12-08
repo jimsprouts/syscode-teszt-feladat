@@ -14,7 +14,10 @@ import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import lombok.extern.slf4j.Slf4j;
+
 @ExtendWith(MockitoExtension.class)
+@Slf4j
 public class StudentServiceTest {
 
     @InjectMocks
@@ -29,6 +32,9 @@ public class StudentServiceTest {
     @Test
     public void testSave() {
         UUID newId = UUID.randomUUID();
+
+        log.debug("Creating new student with id " + newId.toString());
+
         StudentDto studentDto = StudentDto.builder().name("Mariah Carey").email("mariah.carey@mariahcarey.com").build();
         Student student = Student.builder().id(newId).name("Mariah Carey").email("mariah.carey@mariahcarey.com").build();
 
